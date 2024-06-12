@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maddukuri Harshitha Sai's Profile</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="profile-info">
+                <h1>Maddukuri Harshitha Sai</h1>
+                <p>harshitha@email.com</p>
+                <p>+123456789</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <img src="profile_image.png" alt="Profile Image">
+            <h1>Hi, I'm Maddukuri Harshitha Sai! <span>👋</span></h1>
+            <p> I'm harshitha Seeking a challenging role in a reputable organization that gives me a chance to upgrade my skills,Expand knowledge and to utilize those to work for the growth of the organization .Passionate to implement new projects.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="skill1_logo.jpg" alt="JavaScript">
+                <p>Skill 1: JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="skill2_logo.jpg" alt="Python">
+                <p>Skill 2: Python</p>
+            </div>
+            <div class="skill">
+                <img src="skill3_logo.jpg" alt="HTML & CSS">
+                <p>Skill 3: HTML & CSS</p>
+            </div>
+            <div class="skill">
+                <img src="skill4_logo.jpg" alt="Java">
+                <p>Skill 4: Java</p>
+            </div>
+            <div class="skill">
+                <img src="skill5_logo.jpg" alt="SQL">
+                <p>Skill 5: SQL</p>
+            </div>
+            <div class="skill">
+                <img src="skill6_logo.jpg" alt="C">
+                <p>Skill 6: C</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: Password and Strength Estimator Based on Cracking (2019-2020)</h3>
+            <p>To measure how strong the password is and to understand how easy the passwords are to crack. Tech skills: based on the cracking techniques of ethical hacking (using Python) and Django framework for this project.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: Scholarship Information Portal (2020-2021)</h3>
+            <p>The Scholarship Information Portal is an integrated approach making all the scholarships available to students on a common platform. Tech skills: based on HTML and CSS for this project.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3: Vehicle Number Plate Detection (2021-2022)</h3>
+            <p>To find the number plate on the car and extract license number from it, utilizing computer vision and deep learning. Tech skills: based on deep learning.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 4: A Siamese Network Based Writer Independent Offline Signature Verification (2022-2023)</h3>
+            <p>To check whether the signatures are real or forgery with pattern recognition and released a research paper in IJFANS. Tech skills: based on HTML, CSS, JavaScript, Java, and Python.</p>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendation">
+            <p>"Harshitha is a very quick learner and quickly grasps key concepts of web development. She has a great attitude and is an excellent team player."</p>
+        </div>
+        <div class="recommendation">
+            <p>"Working with Harshitha has been an awesome experience. She is highly knowledgeable and always goes the extra step to make sure everything is right."</p>
+        </div>
+        <div class="recommendation">
+            <p>"I had worked along with Harshitha during the initial phase of our venture which needed web development. She is a committed resource who has in-depth knowledge about the domain."</p>
+        </div>
+    </section>
+
+    <section id="leave-recommendation">
+        <h2>Leave a Recommendation</h2>
+        <form>
+            <input type="text" name="name" placeholder="Name (Optional)">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button id="recommend_btn" type="button" onclick="addRecommendation()">Submit</button>
+        </form>
+    </section>
+
+    <a href="#home" class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1zM6.354 4.646a.5.5 0 0 0-.708.708L8 7.707V11.5a.5.5 0 0 0 1 0V7.707l2.354-2.353a.5.5 0 0 0-.708-.708L8 6.293 6.354 4.646z"/>
+        </svg>
+    </a>
+
+    <script>
+        function addRecommendation() {
+            var name = document.querySelector('input[name="name"]').value;
+            var message = document.querySelector('textarea[name="message"]').value;
+            var recommendationsSection = document.getElementById('recommendations');
+            var newRecommendation = document.createElement('div');
+            newRecommendation.classList.add('recommendation');
+            newRecommendation.innerHTML = `<p>"${message}"</p><p>-${name}</p>`;
+            recommendationsSection.appendChild(newRecommendation);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
